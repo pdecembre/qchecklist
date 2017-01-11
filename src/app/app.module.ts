@@ -13,13 +13,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { QuantumComponent } from './dataplan/quantum/quantum.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    QuantumComponent
+    QuantumComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

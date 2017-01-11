@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 
 import { firebaseConfig } from '../services/firebase.config';
 
@@ -21,7 +22,7 @@ import { FooterComponent } from './layout/footer/footer.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    
+
     AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],

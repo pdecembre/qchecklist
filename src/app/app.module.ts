@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 import { firebaseConfig } from '../services/firebase.config';
 
@@ -24,7 +25,7 @@ import { QuantumComponent } from './dataplan/quantum/quantum.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-
+    AppRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],

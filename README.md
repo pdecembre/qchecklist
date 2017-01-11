@@ -32,5 +32,5 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 =======
 # qchecklist
-check list for production deployment 
+check list for production deployment
 >>>>>>> 8c62847eb05d634d1ea131763bf8d2ace33b7e3b

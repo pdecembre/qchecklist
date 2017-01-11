@@ -23,7 +23,7 @@
     "@angular/platform-browser-dynamic": "^2.3.1",
     "@angular/router": "^3.3.1",
     "angularfire2": "latest",
-    "bootstrap": "^4.0.0-alpha.6",
+    "bootstrap": "latest",
     "core-js": "^2.4.1",
     "firebase": "latest",
     "rxjs": "^5.0.1",

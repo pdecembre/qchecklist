@@ -14,6 +14,7 @@ import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { QuantumComponent } from './dataplan/quantum/quantum.component';
 import { HomeComponent } from './home/home.component';
+import { DeploymentComponent } from './deployment/deployment.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HomeComponent } from './home/home.component';
     HeaderComponent,
     FooterComponent,
     QuantumComponent,
-    HomeComponent
+    HomeComponent,
+    DeploymentComponent
   ],
   imports: [
     BrowserModule,

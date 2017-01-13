@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { MaterialModule } from '@angular/material';
+
 import { AppRoutingModule } from './app-routing.module';
-
 import { firebaseConfig } from '../services/firebase.config';
-
 import { AngularFireModule } from 'angularfire2';
 
 import { AppComponent } from './app.component';
@@ -15,6 +15,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { QuantumComponent } from './dataplan/quantum/quantum.component';
 import { HomeComponent } from './home/home.component';
 import { DeploymentComponent } from './deployment/deployment.component';
+import { TeamsComponent } from './teams/teams.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +24,15 @@ import { DeploymentComponent } from './deployment/deployment.component';
     FooterComponent,
     QuantumComponent,
     HomeComponent,
-    DeploymentComponent
+    DeploymentComponent,
+    TeamsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AppRoutingModule,
+    MaterialModule.forRoot(),
     AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],

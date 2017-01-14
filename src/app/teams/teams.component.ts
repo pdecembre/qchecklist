@@ -21,8 +21,6 @@ export class TeamsComponent implements OnInit {
     this.teams = teams$;
 
     teams$.subscribe(t => {
-      //this.teams = t;
-      //this.teams.push(t);
       console.log(t);
     });
     

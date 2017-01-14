@@ -7,7 +7,7 @@ import { DeploymentComponent } from './deployment/deployment.component';
 import { TeamsComponent } from './teams/teams.component';
 
 const APP_ROUTES: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'teams', component: TeamsComponent },
   { path: 'deployment', component: DeploymentComponent }
 ];

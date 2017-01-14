@@ -15,15 +15,23 @@ import { DevteamService } from './../../services/dev-team/devteam.service';
 export class TeamsComponent implements OnInit {
 
   constructor(private devService: DevteamService) {
-    var tm = devService.getTeams();
-    this.teams = tm;
-    //console.log(tm);
+
+    var teams$ : FirebaseListObservable<any> = devService.getTeams();
+    
+    this.teams = teams$;
+
+    teams$.subscribe(t => {
+      //this.teams = t;
+      //this.teams.push(t);
+      console.log(t);
+    });
+    
    }
 
 
   team:Qteam;
 
-  teams: FirebaseListObservable<any[]>;
+  teams: FirebaseListObservable<any>;
     
   ngOnInit() {
   }

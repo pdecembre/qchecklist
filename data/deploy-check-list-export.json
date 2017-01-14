@@ -1,0 +1,49 @@
+{
+  "teams" : {
+    "horizon" : {
+      "members" : {
+        "Felix" : {
+          "hobby" : "trouble, could be bomb maker",
+          "name" : "Felix",
+          "title" : "who knows"
+        },
+        "Oneysis" : {
+          "hobby" : "travel, specially to Cuba",
+          "name" : "Oneysis",
+          "title" : "some days dev, some days... God help me"
+        },
+        "Pierre" : {
+          "hobby" : "grow my own food, so I can eat for free",
+          "name" : "Alex",
+          "title" : "still trying to figure it out"
+        }
+      },
+      "name" : "Horizon"
+    },
+    "planetExpress" : {
+      "members" : {
+        "Drew" : {
+          "hobby" : "sleep",
+          "name" : "D. Harris",
+          "title" : "code keeper"
+        },
+        "Heitor" : {
+          "hobby" : "dancing toy maker",
+          "name" : "Heitor",
+          "title" : "I see it"
+        },
+        "Landry" : {
+          "hobby" : "money",
+          "name" : "L Anthony J",
+          "title" : "pions"
+        },
+        "Renier" : {
+          "hobby" : "see title",
+          "name" : "Santander",
+          "title" : "energizer coder"
+        }
+      },
+      "name" : "Planet Express"
+    }
+  }
+}

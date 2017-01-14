@@ -1,8 +1,8 @@
 
 <div class="row">
-  <md-card>
+  <md-card *ngFor="let team of teams | async" >
     <md-card-title>
-      {{teams.horizon | async}}
+      {{team.name}}
     </md-card-title>
     <md-card-content>
       <ul>

@@ -1,0 +1,16 @@
+<div class="row">
+  <md-card *ngFor="let team of teams | async" >
+    <md-card-title>
+      {{team.name}}
+    </md-card-title>
+    <md-card-content>
+      <ul>
+        <!--<li>  <pre>  {{ team.members | json }}  </pre> </li>-->
+        <li *ngFor="let member of team.members">
+          {{member.name}}
+        </li>
+      </ul>
+
+    </md-card-content>
+  </md-card>
+</div>

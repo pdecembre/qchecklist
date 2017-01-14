@@ -15,9 +15,13 @@ export class DevteamService {
 
   getTeams() : FirebaseListObservable<any>{
     var teams$ : FirebaseListObservable<any> = this.af.database.list('teams');
-return teams$;
+    return teams$;   
+  }
 
-    
+
+  getTeamNames() : FirebaseListObservable<any>{
+    var teamNames$ : FirebaseListObservable<any> = this.af.database.list('team-names');
+    return teamNames$;   
   }
 
   getTeam(name:string){

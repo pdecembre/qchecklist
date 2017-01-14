@@ -1,0 +1,41 @@
+{
+  "team-names" : [ "Planet Express", "Horizon", "Homebrew", null, "Infinity", "Beyond", "Bido", "that-team-(Nesto,Mickhal,Fritz)", "Eric - The Builder", "Nobody knows what UX does around here", "IT-(can't forget about them)", "Management-(if you think UX does nothing, check them out)" ],
+  "teams" : {
+    "horizon" : {
+      "members" : [ {
+        "hobby" : "trouble, trouble, trouble could be bomb maker",
+        "name" : "Felix",
+        "title" : "only he knows"
+      }, {
+        "hobby" : "Cuba, Cuba, Cuba",
+        "name" : "Oneysis",
+        "title" : "some days dev, some days... God help me"
+      }, {
+        "hobby" : "grow my own food, so I can eat for free",
+        "name" : "Alex",
+        "title" : "still trying to figure it out"
+      } ],
+      "name" : "Horizon"
+    },
+    "planetExpress" : {
+      "members" : [ {
+        "hobby" : "sleep",
+        "name" : "D. Harris",
+        "title" : "code keeper"
+      }, {
+        "hobby" : "dancing toy maker",
+        "name" : "Heitor",
+        "title" : "I see it"
+      }, {
+        "hobby" : "money",
+        "name" : "L Anthony J",
+        "title" : "pions"
+      }, {
+        "hobby" : "see title",
+        "name" : "Santander",
+        "title" : "energizer coder"
+      } ],
+      "name" : "Planet Express"
+    }
+  }
+}

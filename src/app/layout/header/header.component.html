@@ -1,58 +1,39 @@
-<div class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-                
-          <a  class="navbar-brand">Deployment CheckList</a>
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse" id="navbar-main">
-          <ul class="nav navbar-nav">
-
-            <li>
-              <a routerLink="/home" routerLinkActive="active">Home</a>
-            </li>
-
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" routerLink="/teams" routerLinkActive="active" id="teams">Teams <span class="caret"></span></a>
-              <ul class="dropdown-menu" aria-labelledby="teams">
-                <li><a href="#">Default</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Cerulean</a></li>
-                <li><a href="#">Cosmo</a></li>
-                <li><a href="#">Cyborg</a></li>
-
-              </ul>
-            </li>
-
-            <li>
-              <a routerLink="/deployment" routerLinkActive="active">Releases</a>
-            </li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">i-Guru <span class="caret"></span></a>
-              <ul class="dropdown-menu" aria-labelledby="download">
-                <li><a href="#">Open Sandbox</a></li>
-                <li class="divider"></li>
-                <li><a href="#">bootstrap.min.css</a></li>
-                <li><a href="#">bootstrap.css</a></li>
-                <li class="divider"></li>
-                <li><a href="#">variables.less</a></li>
-                <li><a href="#">bootswatch.less</a></li>
-                <li class="divider"></li>
-                <li><a href="#">_variables.scss</a></li>
-                <li><a href="#">_bootswatch.scss</a></li>
-              </ul>
-            </li>
-          </ul>
-
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" target="_blank">i-guru</a></li>
-            <li><a href="#" target="_blank">i-Guru</a></li>
-          </ul>
-
-        </div>
-      </div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand"routerLink="">Q-Dev-Check-List</a>
     </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a routerLink="/home" routerLinkActive="active">Home</a>
+        </li>
+        
+        <li class="dropdown">
+          <a routerLink="/teams-list" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Q-Teams <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">            
+            <li *ngFor="let team of teamNames | async">
+              <a routerLink="/home" routerLinkActive="active">{{team.$value}}</a>
+              <li class="divider"></li>
+          </ul>
+        </li>
+      </ul>
+      <!--<form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>-->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

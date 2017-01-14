@@ -17,6 +17,8 @@ import { HomeComponent } from './home/home.component';
 import { DeploymentComponent } from './deployment/deployment.component';
 import { TeamsComponent } from './teams/teams.component';
 import { DevteamService } from '../services/dev-team/devteam.service';
+import { TeamsListComponent } from './teams/teams-list/teams-list.component';
+import { TeamDetailComponent } from './teams/team-detail/team-detail.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { DevteamService } from '../services/dev-team/devteam.service';
     QuantumComponent,
     HomeComponent,
     DeploymentComponent,
-    TeamsComponent
+    TeamsComponent,
+    TeamsListComponent,
+    TeamDetailComponent
   ],
   imports: [
     BrowserModule,

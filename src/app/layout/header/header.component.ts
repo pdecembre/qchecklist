@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
+
+import { DevteamService } from './../../../services/dev-team/devteam.service';
+
 
 @Component({
   selector: 'app-header',
@@ -7,7 +11,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+    constructor(private devService: DevteamService) {
+
+    var teamNames$ : FirebaseListObservable<any> = devService.getTeamNames();
+    this.teamNames = teamNames$;
+   }
+
+  teamNames: FirebaseListObservable<any>;
 
   ngOnInit() {
   }

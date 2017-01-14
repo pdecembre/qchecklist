@@ -3,6 +3,8 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/observable';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
+import  * as _  from 'lodash';
+
 import { Qteam, TeamMember } from './../../app/shared/model/team';
 
 

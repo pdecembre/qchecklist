@@ -2,17 +2,17 @@
   "teams" : {
     "horizon" : {
       "members" : {
-        "0" : {
+        "Felix" : {
           "hobby" : "trouble, trouble, trouble could be bomb maker",
           "name" : "Felix",
           "title" : "only he knows"
         },
-        "1" : {
+        "Oneysis" : {
           "hobby" : "Cuba, Cuba, Cuba",
           "name" : "Oneysis",
           "title" : "some days dev, some days... God help me"
         },
-        "2" : {
+        "Pierre" : {
           "hobby" : "grow my own food, so I can eat for free",
           "name" : "Alex",
           "title" : "still trying to figure it out"
@@ -22,22 +22,22 @@
     },
     "planetExpress" : {
       "members" : {
-        "0" : {
+        "Drew" : {
           "hobby" : "sleep",
           "name" : "D. Harris",
           "title" : "code keeper"
         },
-        "1" : {
+        "Heitor" : {
           "hobby" : "dancing toy maker",
           "name" : "Heitor",
           "title" : "I see it"
         },
-        "2" : {
+        "Landry" : {
           "hobby" : "money",
           "name" : "L Anthony J",
           "title" : "pions"
         },
-        "3" : {
+        "Renier" : {
           "hobby" : "see title",
           "name" : "Santander",
           "title" : "energizer coder"

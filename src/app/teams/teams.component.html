@@ -6,9 +6,10 @@
     </md-card-title>
     <md-card-content>
       <ul>
-        <!--<li *ngFor="let member in teams.horizon.members | async">
+        <!--<li>  <pre>  {{ team.members | json }}  </pre> </li>-->
+        <li *ngFor="let member of team.members">
           {{member.name}}
-        </li>-->
+        </li>
       </ul>
 
     </md-card-content>

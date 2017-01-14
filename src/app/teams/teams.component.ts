@@ -17,12 +17,7 @@ export class TeamsComponent implements OnInit {
   constructor(private devService: DevteamService) {
 
     var teams$ : FirebaseListObservable<any> = devService.getTeams();
-    
     this.teams = teams$;
-
-    teams$.subscribe(t => {
-      console.log(t);
-    });
     
    }
 

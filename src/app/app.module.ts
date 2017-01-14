@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { MaterialModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
-import { firebaseConfig } from '../services/firebase.config';
+import { DEPLOY_CHECKLIST_FIREBASE_CONFIG } from '../services/firebase-configs/deploy-cheklist.firebase.config';
 import { AngularFireModule } from 'angularfire2';
 
 import { AppComponent } from './app.component';
@@ -34,7 +34,7 @@ import { DevteamService } from '../services/dev-team/devteam.service';
     HttpModule,
     AppRoutingModule,
     MaterialModule.forRoot(),
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(DEPLOY_CHECKLIST_FIREBASE_CONFIG)
   ],
   providers: [DevteamService],
   bootstrap: [AppComponent]

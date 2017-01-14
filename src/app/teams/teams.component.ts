@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
+
 import { Qteam, TeamMember } from '../shared/model/team';
+import { DevteamService } from './../../services/dev-team/devteam.service';
+
+
+
 
 @Component({
   selector: 'app-teams',
@@ -8,12 +14,17 @@ import { Qteam, TeamMember } from '../shared/model/team';
 })
 export class TeamsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private devService: DevteamService) {
+    var tm = devService.getTeams();
+    this.teams = tm;
+    //console.log(tm);
+   }
 
 
-  team:Qteam; 
-  
-  
+  team:Qteam;
+
+  teams: FirebaseListObservable<any[]>;
+    
   ngOnInit() {
   }
 

@@ -16,6 +16,7 @@ import { QuantumComponent } from './dataplan/quantum/quantum.component';
 import { HomeComponent } from './home/home.component';
 import { DeploymentComponent } from './deployment/deployment.component';
 import { TeamsComponent } from './teams/teams.component';
+import { DevteamService } from '../services/dev-team/devteam.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { TeamsComponent } from './teams/teams.component';
     MaterialModule.forRoot(),
     AngularFireModule.initializeApp(firebaseConfig)
   ],
-  providers: [],
+  providers: [DevteamService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

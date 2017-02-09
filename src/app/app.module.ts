@@ -19,6 +19,7 @@ import { TeamsComponent } from './teams/teams.component';
 import { DevteamService } from '../services/dev-team/devteam.service';
 import { TeamsListComponent } from './teams/teams-list/teams-list.component';
 import { TeamDetailComponent } from './teams/team-detail/team-detail.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TeamDetailComponent } from './teams/team-detail/team-detail.component';
     DeploymentComponent,
     TeamsComponent,
     TeamsListComponent,
-    TeamDetailComponent
+    TeamDetailComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -11,28 +11,27 @@ import { Qteam, TeamMember } from './../../app/shared/model/team';
 @Injectable()
 export class DevteamService {
 
-  
 
-  getTeams() : FirebaseListObservable<any>{
-    var teams$ : FirebaseListObservable<any> = this.af.database.list('teams');
-    return teams$;   
+  getTeams(): FirebaseListObservable<any> {
+    let teams$: FirebaseListObservable<any> = this.af.database.list('teams');
+    return teams$;
   }
 
 
-  getTeamNames() : FirebaseListObservable<any>{
-    var teamNames$ : FirebaseListObservable<any> = this.af.database.list('team-names');
-    return teamNames$;   
+  getTeamNames(): FirebaseListObservable<any> {
+    let teamNames$: FirebaseListObservable<any> = this.af.database.list('team-names');
+    return teamNames$;
   }
 
-  getTeam(name:string){
-
-  }
-
-  addTeam(team:Qteam){
+  getTeam(name: string) {
 
   }
 
-  constructor(private af: AngularFire) {    
+  addTeam(team: Qteam) {
+
+  }
+
+  constructor(private af: AngularFire) {
   }
 
 }
